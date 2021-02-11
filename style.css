@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*{
+   padding:0;
+   margin:0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Lato', sans-serif;
+   background:#f1f5f8;
+   height: 100vh;
+   overflow-y: hidden;
+   padding:1rem;
+}
+
+/* Utilities */
+img{
+   width: 100%;
+}
+
+a{
+   text-decoration: none;
+}
+
+/* Heading */
+.heading{
+   text-align: center;
+   margin-top: 40px;
+   margin-bottom: 30px;
+}
+
+h1{
+   color:#102a42;
+   letter-spacing: 5px;
+   font-size: 1.85rem;
+   font-weight: 700;
+   position: relative;
+   display: inline-block;
+}
+
+h1::after{
+   content: "";
+   background-color: #4ca8e9;
+   height: 5px;
+   width:50%;
+   position: absolute;
+   left: 50%;
+   top: 120%;
+   transform: translate(-50%,-50%);
+}
+
+/* Container */
+.container{
+   background-color: #fff;
+   text-align: center;
+   max-width:620px;
+   margin:auto;
+   padding:2.2rem 2.5rem;
+   box-shadow: 3px 2px 2px rgb(0, 0, 0,.1),-3px 2px 1px rgb(0, 0, 0,.1);
+   border-radius: 5px;
+}
+
+.img{
+   display: inline-block;
+   position: relative;
+   margin-bottom: .5rem;
+}
+
+.img img{
+   width:130px;
+   height: 130px;
+   border-radius: 50%;
+   box-shadow: 8px -5px 0 rgb(76, 168, 233);
+}
+
+span{
+   position: absolute;
+   left:-3px;
+   top:6px;
+}
+
+.fa-quote-right{
+   background-color: #49a6e9;
+   color:#fff;
+   padding: 1rem;
+   border-radius: 50%;
+}
+
+.name{
+   font-size: 1.2rem;
+   font-weight: 400;
+   letter-spacing: 2px;
+   margin-bottom: .3rem;
+}
+
+.profession{
+   text-transform: uppercase;
+   color: rgb(76, 168, 233);
+   margin-bottom: .5rem;
+}
+
+.description{
+   line-height: 1.5;
+   font-size: 1.1rem;
+   color:grey;
+   margin-bottom: 1rem;
+}
+
+.arrows{
+   margin-bottom: .8rem;
+}
+
+.arrows a{
+   color:rgb(76, 168, 233,.8);
+   font-size: 1.3rem;
+   margin: 0 .5rem;
+   transition: color .3s ease;
+}
+
+.arrows a:hover{
+   color:rgb(76, 168, 233);
+}
+
+.primary-btn{
+   background-color:rgba(0, 0, 0, .1);
+   font-size: .8rem;
+   color: rgb(76, 168, 233);
+   padding:.2rem .18rem; 
+   border-radius: 5px;
+   border:2px solid rgb(76, 168, 233);
+   transition: background-color .3s ease;
+}
+
+.primary-btn:hover{
+   background-color:rgba(0, 0, 0, .15);
+}
